@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi CSS - Multrif.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-css.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html" class="active"><i data-lucide="book-open"></i> Materi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">›</span>
+      <a href="materi.html">Materi</a>
+      <span class="sep">›</span>
+      <span>CSS</span>
+    </div>
+    <div class="progress-indicator"><i data-lucide="book-open"></i> Materi 2 dari 3: CSS</div>
+
+    <header style="text-align:center;margin-bottom:2rem;" data-aos="fade-down">
+      <div style="font-size:3rem;margin-bottom:0.5rem;"><i data-lucide="palette" style="color:#2563eb;"></i></div>
+      <h1 class="page-title">CSS</h1>
+      <p class="page-subtitle">Mengatur tampilan halaman web, dari warna dan font sampai tata letak yang responsif.</p>
+    </header>
+
+    <nav class="subtopic-nav" data-aos="fade-up">
+      <a href="#sub-1">Pengertian & Fungsi CSS</a>
+      <a href="#sub-2">Hubungan HTML & CSS</a>
+      <a href="#sub-3">Sintaks CSS</a>
+      <a href="#sub-4">Selector</a>
+      <a href="#sub-5">Property & Value</a>
+      <a href="#sub-6">Warna</a>
+      <a href="#sub-7">Font</a>
+      <a href="#sub-8">Margin & Padding</a>
+      <a href="#sub-9">Border</a>
+      <a href="#sub-10">Width & Height</a>
+      <a href="#sub-11">Layout (Flexbox & Grid)</a>
+      <a href="#sub-12">Responsive Design</a>
+    </nav>
+
+    <section class="subtopic" id="sub-1" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">1</span><h3>Pengertian &amp; Fungsi CSS</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan dari dokumen HTML, seperti warna, ukuran, jarak, dan posisi elemen. Kata &ldquo;Cascading&rdquo; artinya bertingkat, merujuk pada aturan prioritas ketika beberapa aturan CSS saling bertentangan.</p>
+      <p class="content-text">Fungsi CSS mencakup mengatur warna teks dan latar belakang, mengatur font dan ukuran teks, mengatur jarak antar elemen, mengatur ukuran dan bentuk elemen, mengatur tata letak halaman, serta membuat tampilan responsif terhadap berbagai ukuran layar.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/pengertian-css.png" alt="Perbandingan halaman HTML polos dengan halaman yang dipercantik menggunakan CSS." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=116&amp;end=140&amp;rel=0" title="Video materi: Pengertian dan Fungsi CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/pengertian-css.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">p {
+  color: navy;
+  font-size: 16px;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-2" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">2</span><h3>Hubungan HTML &amp; CSS</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">CSS selalu menunjuk ke elemen HTML tertentu menggunakan selector, lalu menerapkan aturan gaya padanya. Ada tiga cara menghubungkan CSS ke HTML, yaitu inline langsung pada atribut style, internal di dalam tag &lt;style&gt; pada &lt;head&gt;, dan external melalui file .css terpisah yang dihubungkan lewat &lt;link&gt;.</p>
+      <p class="content-text">Cara external adalah praktik terbaik karena memisahkan struktur (HTML) dari tampilan (CSS), sehingga kode lebih mudah dirawat.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=140&amp;end=280&amp;rel=0" title="Video materi: Hubungan HTML dan CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/hubungan-html-css.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;head&gt;
+  &lt;link rel="stylesheet" href="gaya.css"&gt;
+&lt;/head&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-3" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">3</span><h3>Sintaks CSS</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Satu aturan CSS terdiri dari selector yaitu penunjuk elemen, diikuti tanda kurung kurawal yang berisi satu atau lebih pasangan property dan value, dipisahkan titik koma.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/sintaks-css.png" alt="Bagian aturan CSS: selector, kurung kurawal, property, value, dan tanda baca." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=4884&amp;end=5142&amp;rel=0" title="Video materi: Sintaks CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/sintaks-css.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">selector {
+  property: value;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-4" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">4</span><h3>Selector (Pembahasan Mendalam)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Selector elemen menunjuk seluruh elemen dengan nama tag tertentu, misalnya p untuk semua paragraf. Selector class ditandai titik dan dapat dipakai berulang kali pada banyak elemen. Selector ID ditandai pagar dan menunjuk satu elemen spesifik yang idealnya hanya dipakai satu kali per halaman.</p>
+      <p class="content-text">Selector juga bisa digabung, misalnya selector turunan (dipisah spasi) untuk elemen di dalam elemen lain, atau beberapa selector sekaligus dipisah koma agar mendapat aturan yang sama.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/selector.png" alt="Contoh selector elemen, class, dan ID pada tiga kartu." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=6125&amp;end=6280&amp;rel=0" title="Video materi: Selector CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/selector.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.peringatan {
+  color: red;
+  font-weight: bold;
+}
+
+#judul-utama {
+  text-align: center;
+}
+
+nav a {
+  color: white;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-5" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">5</span><h3>Property &amp; Value</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Property adalah nama aspek tampilan yang ingin diatur, misalnya color, font-size, atau margin. Value adalah nilai yang diberikan pada property tersebut, misalnya red, 16px, atau 10px.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=5142&amp;end=5763&amp;rel=0" title="Video materi: Property dan Value CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/properti-value.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.tombol {
+  background-color: #2563eb;
+  color: white;
+  font-size: 14px;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-6" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">6</span><h3>Warna</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Warna pada CSS dapat ditulis dalam beberapa format, yaitu nama warna seperti red, kode heksadesimal seperti nomor pagar ff0000, atau fungsi rgb dengan tiga angka.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=6655&amp;end=6753&amp;rel=0" title="Video materi: Warna CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/warna.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">h1 { color: #1e293b; }
+body { background-color: rgb(240, 240, 245); }</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-7" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">7</span><h3>Font</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Property font-family menentukan jenis huruf, font-size menentukan ukuran, font-weight menentukan ketebalan seperti normal atau bold, dan font-style menentukan gaya seperti miring atau italic. Menuliskan beberapa nama font berurutan adalah praktik font fallback, jika font pertama tidak tersedia maka browser mencoba font berikutnya.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=6280&amp;end=6655&amp;rel=0" title="Video materi: Font CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/font.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">p {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-8" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">8</span><h3>Margin &amp; Padding</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Setiap elemen HTML memiliki box model yang terdiri dari isi (content), padding yaitu jarak dalam antara isi dan border, border yaitu garis tepi, dan margin yaitu jarak luar antara elemen tersebut dan elemen tetangganya.</p>
+      <p class="content-text">Kesalahan umum pemula adalah menganggap margin dan padding hal yang sama, padahal margin memengaruhi jarak dari elemen lain sedangkan padding memengaruhi jarak dari isi elemen itu sendiri.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/margin-padding.png" alt="Model kotak CSS yang memperlihatkan content, padding, border, dan margin." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=6753&amp;end=7014&amp;rel=0" title="Video materi: Margin dan Padding CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/margin-padding.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.kotak {
+  padding: 16px;
+  margin: 24px;
+  border: 1px solid #ccc;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-9" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">9</span><h3>Border</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Property border mengatur garis tepi elemen, terdiri dari ketebalan, jenis garis, dan warna. Property border-radius membuat sudut elemen menjadi membulat.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/3U1AhjEf7DM?start=6827&amp;end=6898&amp;rel=0" title="Video materi: Border CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/border.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.kartu {
+  border: 2px solid #0f6e56;
+  border-radius: 12px;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-10" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">10</span><h3>Width &amp; Height</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Property width dan height mengatur lebar dan tinggi elemen, dapat menggunakan satuan tetap seperti px atau satuan relatif seperti persen, vw, dan vh.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/nm-r8-JLDvE?start=301&amp;end=655&amp;rel=0" title="Video materi: Width dan Height CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/width-height.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.gambar-profil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-11" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">11</span><h3>Layout (Flexbox &amp; Grid)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Property display menentukan cara sebuah elemen mengalir pada halaman, misalnya block yang memenuhi lebar dan turun baris baru, inline yang sejajar horizontal, atau inline-block yang sejajar namun tetap bisa diatur ukurannya.</p>
+      <p class="content-text">Flexbox digunakan untuk menyusun elemen dalam satu baris atau satu kolom secara fleksibel, dengan kontrol perataan memakai justify-content dan align-items. Grid digunakan untuk menyusun elemen dalam bentuk baris dan kolom sekaligus, cocok untuk tata letak halaman yang lebih kompleks seperti galeri foto.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/layout-flexbox-grid.png" alt="Perbandingan susunan elemen dengan Flexbox dan Grid." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/nm-r8-JLDvE?start=1126&amp;end=6486&amp;rel=0" title="Video materi: Layout CSS dengan Flexbox dan Grid" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/layout-flexbox-grid.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.galeri {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-12" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">12</span><h3>Responsive Design</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Desain responsif memastikan tampilan halaman menyesuaikan diri secara baik pada berbagai ukuran layar seperti desktop, tablet, dan ponsel, umumnya menggunakan media query.</p>
+      <p class="content-text">Kesalahan umum pemula adalah hanya menguji tampilan di layar besar tanpa memeriksa tampilan pada layar kecil, sehingga elemen tumpang tindih atau teks terpotong pada perangkat mobile.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/css/desain-responsif.jpg" alt="Contoh tampilan responsif pada desktop, tablet, dan ponsel." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/nm-r8-JLDvE?start=8921&amp;end=10123&amp;rel=0" title="Video materi: Responsive Design CSS" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/css/desain-responsif.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-css"><code class="language-css">@media (max-width: 600px) {
+  .kontainer {
+    grid-template-columns: 1fr;
+  }
+}</code></pre>
+    </section>
+
+    <!-- Simulasi Kode Live (HTML + CSS) -->
+    <section class="simulasi-section" data-aos="zoom-in">
+      <h3><i data-lucide="play-circle" style="color:var(--color-accent);"></i> Coba Kodenya! — Simulasi CSS Live</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Tulis kode HTML dan CSS di kotak kiri, hasilnya muncul langsung di kanan. Ubah kodenya dan lihat perubahannya!</p>
+      <div class="simulasi-actions">
+        <button class="btn btn-primary btn-sm" id="css-run"><i data-lucide="play"></i> Jalankan</button>
+      </div>
+      <div class="simulasi-layout">
+        <div class="simulasi-editor">
+          <label class="simulasi-preview-label"><i data-lucide="code"></i> Kode HTML</label>
+          <textarea class="code-editor" id="css-html-editor" spellcheck="false" style="min-height:120px;"></textarea>
+          <label class="simulasi-preview-label"><i data-lucide="palette"></i> Kode CSS</label>
+          <textarea class="code-editor" id="css-editor" spellcheck="false" style="min-height:120px;"></textarea>
+        </div>
+        <div class="simulasi-preview-wrap">
+          <label class="simulasi-preview-label"><i data-lucide="eye"></i> Hasil Preview</label>
+          <iframe class="simulasi-preview" id="css-preview" title="Preview CSS"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latihan Interaktif Singkat -->
+    <section class="quiz-section" data-aos="fade-up">
+      <h3><i data-lucide="lightbulb" style="color:var(--color-warning);"></i> Latihan Singkat CSS</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Yuk coba 5 soal singkat! Pilih jawabanmu, langsung muncul feedback-nya.</p>
+      <div id="quiz-css"></div>
+    </section>
+
+    <!-- Navigasi antar materi -->
+    <nav class="materi-nav">
+      <a href="materi-html.html" class="btn btn-ghost">
+        <i data-lucide="arrow-left"></i>
+        <span>
+          <span class="nav-label">Materi Sebelumnya</span><br>
+          <span class="nav-title">HTML</span>
+        </span>
+      </a>
+      <a href="materi-js.html" class="btn btn-primary">
+        <span style="text-align:right;">
+          <span class="nav-label">Materi Berikutnya</span><br>
+          <span class="nav-title">JavaScript</span>
+        </span>
+        <i data-lucide="arrow-right"></i>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/simulasi.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/quiz-materi.js"></script>
+  <script>
+    lucide.createIcons();
+    if (typeof Prism !== 'undefined') Prism.highlightAll();
+    renderMiniQuiz('quiz-css', quizCSS);
+  </script>
+</body>
+</html>

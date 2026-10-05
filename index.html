@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multrif. - Belajar Dasar Pemrograman Web</title>
+  <meta name="description" content="Multrif: multimedia pembelajaran interaktif untuk belajar HTML, CSS, dan JavaScript dari nol.">
+
+  <!-- Google Fonts: Poppins + Fira Code -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="active"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html"><i data-lucide="book-open"></i> Materi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="floating-icons" aria-hidden="true">
+      <span class="float-item">&lt;/&gt;</span>
+      <span class="float-item">{ }</span>
+      <span class="float-item">;</span>
+      <span class="float-item">()</span>
+      <span class="float-item">=&gt;</span>
+      <span class="float-item">#</span>
+    </div>
+    <h1 data-aos="fade-down">Multrif.</h1>
+    <p class="tagline" data-aos="fade-up" data-aos-delay="100">
+      <span id="typing-tagline" data-text="Belajar HTML, CSS, & JavaScript dari nol."></span><span class="cursor"></span>
+    </p>
+    <p class="hero-desc" data-aos="fade-up" data-aos-delay="200">
+      Multrif adalah media belajar interaktif untuk memahami dasar dasar pemrograman web. Baca materinya, coba langsung kodenya, lalu uji pemahamanmu lewat latihan dan evaluasi.
+    </p>
+    <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+      <a href="pengenalan.html" class="btn btn-primary">
+        <i data-lucide="play"></i> Mulai Belajar
+      </a>
+      <a href="materi.html" class="btn btn-outline">
+        <i data-lucide="book-open"></i> Lihat Materi
+      </a>
+    </div>
+  </header>
+
+  <!-- Fitur singkat -->
+  <section class="container" data-aos="fade-up">
+    <h2 class="page-title" style="text-align:center;">Apa yang Kamu Bisa Pelajari?</h2>
+    <p class="page-subtitle" style="text-align:center;">Tiga fondasi pemrograman web yang akan kamu kuasai, lengkap dengan simulasi kode langsung.</p>
+    <div class="info-grid">
+      <div class="info-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="info-icon"><i data-lucide="code"></i></div>
+        <h4>HTML</h4>
+        <p>Menyusun struktur dan isi halaman web, mulai dari tag, elemen, heading, sampai form.</p>
+      </div>
+      <div class="info-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="info-icon"><i data-lucide="palette"></i></div>
+        <h4>CSS</h4>
+        <p>Mengatur tampilan halaman, mulai dari warna dan font sampai tata letak yang responsif.</p>
+      </div>
+      <div class="info-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="info-icon"><i data-lucide="zap"></i></div>
+        <h4>JavaScript</h4>
+        <p>Menambahkan interaksi pada halaman, mulai dari event klik sampai memanipulasi elemen lewat DOM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

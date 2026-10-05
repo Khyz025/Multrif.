@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Materi - Multrif.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html" class="active"><i data-lucide="book-open"></i> Materi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">›</span>
+      <span>Materi</span>
+    </div>
+
+    <h1 class="page-title" data-aos="fade-up">Daftar Materi</h1>
+    <p class="page-subtitle" data-aos="fade-up">Pilih salah satu materi untuk mulai belajar. Urutan HTML, CSS, lalu JavaScript disarankan bagi pemula.</p>
+
+    <div class="materi-grid">
+      <a href="materi-html.html" class="materi-card html" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-icon"><i data-lucide="code"></i></div>
+        <h3>HTML</h3>
+        <p>Struktur dasar halaman web: tag, elemen, atribut, heading, paragraf, tautan, gambar, daftar, tabel, dan form.</p>
+        <span class="card-link">Pelajari HTML <i data-lucide="arrow-right"></i></span>
+      </a>
+      <a href="materi-css.html" class="materi-card css" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-icon"><i data-lucide="palette"></i></div>
+        <h3>CSS</h3>
+        <p>Mengatur tampilan halaman: selector, warna, font, jarak, border, layout, hingga desain responsif.</p>
+        <span class="card-link">Pelajari CSS <i data-lucide="arrow-right"></i></span>
+      </a>
+      <a href="materi-js.html" class="materi-card js" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-icon"><i data-lucide="zap"></i></div>
+        <h3>JavaScript</h3>
+        <p>Menambahkan interaksi: variabel, kondisi, fungsi, event, dan manipulasi elemen lewat DOM.</p>
+        <span class="card-link">Pelajari JavaScript <i data-lucide="arrow-right"></i></span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

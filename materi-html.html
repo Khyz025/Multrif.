@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi HTML - Multrif.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Prism.js untuk syntax highlight -->
+  <link href="https://unpkg.com/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-markup.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html" class="active"><i data-lucide="book-open"></i> Materi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Breadcrumb + progress -->
+    <div class="breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">›</span>
+      <a href="materi.html">Materi</a>
+      <span class="sep">›</span>
+      <span>HTML</span>
+    </div>
+    <div class="progress-indicator"><i data-lucide="book-open"></i> Materi 1 dari 3: HTML</div>
+
+    <!-- Header materi -->
+    <header style="text-align:center;margin-bottom:2rem;" data-aos="fade-down">
+      <div style="font-size:3rem;margin-bottom:0.5rem;"><i data-lucide="code" style="color:#d97706;"></i></div>
+      <h1 class="page-title">HTML</h1>
+      <p class="page-subtitle">Struktur dasar sebuah halaman web, mulai dari tag dan elemen sampai form.</p>
+    </header>
+
+    <!-- Navigasi sub-topik -->
+
+    <nav class="subtopic-nav" data-aos="fade-up">
+      <a href="#sub-1">Pengertian & Fungsi HTML</a>
+      <a href="#sub-2">Struktur Dasar Dokumen HTML</a>
+      <a href="#sub-3">Tag, Elemen & Atribut</a>
+      <a href="#sub-4">Heading</a>
+      <a href="#sub-5">Paragraf</a>
+      <a href="#sub-6">Link (Tautan)</a>
+      <a href="#sub-7">Gambar (Image)</a>
+      <a href="#sub-8">List (Daftar)</a>
+      <a href="#sub-9">Tabel (Table)</a>
+      <a href="#sub-10">Form</a>
+    </nav>
+
+    <section class="subtopic" id="sub-1" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">1</span><h3>Pengertian &amp; Fungsi HTML</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">HTML (HyperText Markup Language) adalah bahasa markup yang dipakai untuk menandai bagian bagian dokumen sehingga browser tahu cara menampilkannya. Kata &ldquo;HyperText&rdquo; merujuk pada kemampuan HTML menghubungkan satu dokumen ke dokumen lain melalui tautan.</p>
+      <p class="content-text">Fungsi utama HTML antara lain menyusun struktur dokumen, menandai jenis konten seperti judul, paragraf, dan gambar, menjadi wadah bagi elemen yang nanti diberi gaya oleh CSS dan diberi perilaku oleh JavaScript, serta menyediakan aksesibilitas dasar bagi pembaca layar.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/pengertian-html.jpg" alt="Perbandingan dokumen HTML polos dan halaman web yang telah ditata." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=65&amp;end=234&amp;rel=0" title="Video materi: Pengertian dan Fungsi HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/pengertian-html.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;h1&gt;Judul Berita&lt;/h1&gt;
+&lt;p&gt;Ini paragraf isi berita.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-2" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">2</span><h3>Struktur Dasar Dokumen HTML</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Setiap dokumen HTML memiliki kerangka baku yang terdiri atas deklarasi tipe dokumen, elemen akar &lt;html&gt;, bagian kepala &lt;head&gt; yang berisi metadata, dan bagian tubuh &lt;body&gt; yang berisi konten yang ditampilkan kepada pengguna.</p>
+      <p class="content-text">Bagian &lt;head&gt; tidak tampil langsung di halaman, tetapi berisi informasi penting seperti judul tab browser (&lt;title&gt;) dan pengaturan karakter (&lt;meta charset&gt;). Bagian &lt;body&gt; berisi seluruh konten yang terlihat, mulai dari heading, paragraf, gambar, sampai form.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/struktur-dasar-html.jpg" alt="Diagram struktur dokumen HTML yang berisi bagian head dan body." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=1153&amp;end=1572&amp;rel=0" title="Video materi: Struktur Dasar Dokumen HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/struktur-dasar-html.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Halaman Pertama Saya&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+  &lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-3" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">3</span><h3>Tag, Elemen &amp; Atribut</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Tag adalah penanda yang ditulis di antara kurung sudut, digunakan untuk menandai awal dan akhir suatu bagian konten. Sebagian besar tag berpasangan, yaitu tag pembuka seperti &lt;p&gt; dan tag penutup seperti &lt;/p&gt;. Ada juga tag kosong yang berdiri sendiri, misalnya &lt;img&gt; dan &lt;br&gt;.</p>
+      <p class="content-text">Elemen adalah gabungan dari tag pembuka, isi konten, dan tag penutup secara keseluruhan. Jadi &lt;p&gt;Halo&lt;/p&gt; disebut satu elemen paragraf, sedangkan &lt;p&gt; saja hanyalah tag. Elemen dapat berisi elemen lain di dalamnya, disebut elemen bersarang.</p>
+      <p class="content-text">Atribut adalah informasi tambahan yang ditulis di dalam tag pembuka untuk mengatur atau memberi data ekstra pada elemen tersebut. Atribut ditulis dengan format nama sama dengan nilai, dan satu elemen dapat memiliki lebih dari satu atribut, contohnya href dan target pada tag &lt;a&gt;.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/tag-elemen-atribut.jpg" alt="Anatomi elemen HTML yang menunjukkan tag pembuka, atribut, isi, dan tag penutup." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=955&amp;end=1153&amp;rel=0" title="Video materi: Tag, Elemen, dan Atribut HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/tag-elemen-atribut.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;a href="https://unm.ac.id" target="_blank" title="Kunjungi situs UNM"&gt;Situs UNM&lt;/a&gt;
+&lt;p&gt;Ini paragraf dengan &lt;strong&gt;kata penting&lt;/strong&gt; di dalamnya.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-4" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">4</span><h3>Heading</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Heading digunakan untuk menandai judul dan sub judul, mulai dari &lt;h1&gt; yang paling penting sampai &lt;h6&gt; yang paling kecil. Heading bukan sekadar untuk memperbesar teks, tetapi menunjukkan hierarki informasi pada halaman.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/heading.jpg" alt="Tangga hierarki heading HTML dari h1 sampai h6." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=1589&amp;end=2009&amp;rel=0" title="Video materi: Heading HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/heading.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;h1&gt;Judul Utama Artikel&lt;/h1&gt;
+&lt;h2&gt;Sub Judul Bagian Pertama&lt;/h2&gt;
+&lt;h3&gt;Sub sub Judul&lt;/h3&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-5" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">5</span><h3>Paragraf</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Tag &lt;p&gt; digunakan untuk menandai satu blok teks sebagai paragraf. Browser otomatis memberi jarak di atas dan bawah setiap paragraf, sehingga teks tidak menyatu menjadi satu blok panjang.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=2009&amp;end=2242&amp;rel=0" title="Video materi: Paragraf HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/paragraf.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;p&gt;HTML digunakan untuk menyusun struktur halaman web.&lt;/p&gt;
+&lt;p&gt;CSS digunakan untuk mengatur tampilannya.&lt;/p&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-6" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">6</span><h3>Link (Tautan)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Tag &lt;a&gt; digunakan untuk membuat tautan menuju halaman lain, bagian lain dalam halaman yang sama, atau alamat email. Atribut href berisi tujuan tautan, dan target sama dengan _blank membuka tautan di tab baru.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=4596&amp;end=5696&amp;rel=0" title="Video materi: Link HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/link-tautan.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;a href="https://www.unm.ac.id"&gt;Kunjungi UNM&lt;/a&gt;
+&lt;a href="#materi-css"&gt;Loncat ke bagian CSS&lt;/a&gt;
+&lt;a href="mailto:contoh@email.com"&gt;Kirim Email&lt;/a&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-7" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">7</span><h3>Gambar (Image)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Tag &lt;img&gt; menampilkan gambar pada halaman. Tag ini termasuk void element yang tidak memiliki penutup, wajib memiliki atribut src sebagai sumber gambar, dan disarankan memiliki atribut alt sebagai teks alternatif untuk aksesibilitas.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=3790&amp;end=4596&amp;rel=0" title="Video materi: Gambar HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/gambar.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;img src="pemandangan.jpg" alt="Pemandangan gunung saat matahari terbit" width="400"&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-8" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">8</span><h3>List (Daftar)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">HTML menyediakan dua jenis daftar utama, yaitu daftar tak berurutan &lt;ul&gt; dengan bullet dan daftar berurutan &lt;ol&gt; dengan angka. Setiap item daftar ditandai dengan &lt;li&gt;.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/daftar.jpg" alt="Perbandingan daftar HTML tak berurutan dan daftar berurutan." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=3167&amp;end=3790&amp;rel=0" title="Video materi: List HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/daftar.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;ul&gt;
+  &lt;li&gt;HTML&lt;/li&gt;
+  &lt;li&gt;CSS&lt;/li&gt;
+  &lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Pahami struktur HTML&lt;/li&gt;
+  &lt;li&gt;Pelajari tampilan dengan CSS&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-9" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">9</span><h3>Tabel (Table)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Tabel digunakan untuk menampilkan data dalam bentuk baris dan kolom, memakai &lt;table&gt; sebagai pembungkus, &lt;tr&gt; untuk baris, &lt;th&gt; untuk sel judul kolom, dan &lt;td&gt; untuk sel data biasa.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=5696&amp;end=6995&amp;rel=0" title="Video materi: Tabel HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/tabel.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;table border="1"&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Materi&lt;/th&gt;
+    &lt;th&gt;Fokus Utama&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;HTML&lt;/td&gt;
+    &lt;td&gt;Tag, Elemen, Form&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-10" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">10</span><h3>Form</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Form dibangun dengan tag &lt;form&gt; sebagai pembungkus, berisi elemen input seperti &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, dan &lt;button&gt;. Setiap input umumnya memiliki atribut type yang menentukan jenis data yang diminta, serta atribut name sebagai nama data saat dikirim.</p>
+      <p class="content-text">Atribut required membuat sebuah input wajib diisi sebelum form dapat dikirim, dan tag &lt;label for="..."&gt; dihubungkan dengan id pada input agar label dapat diklik untuk memindahkan fokus ke input terkait.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/html/form.jpg" alt="Alur data dari form yang diisi pengguna hingga ditampilkan sebagai ringkasan." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/yz8cvQ-6Mx8?start=6995&amp;end=9309&amp;rel=0" title="Video materi: Form HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/html/form.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-markup"><code class="language-markup">&lt;form&gt;
+  &lt;label for="nama"&gt;Nama Lengkap:&lt;/label&gt;
+  &lt;input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+
+  &lt;button type="submit"&gt;Kirim&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+    </section>
+
+    <!-- Simulasi Kode Live -->
+    <section class="simulasi-section" data-aos="zoom-in">
+      <h3><i data-lucide="play-circle" style="color:var(--color-accent);"></i> Coba Kodenya! — Simulasi HTML Live</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Ketik kode HTML di kotak kiri, hasilnya muncul langsung di sebelah kanan. Kamu juga bisa tekan tombol "Jalankan".</p>
+      <div class="simulasi-actions">
+        <button class="btn btn-primary btn-sm" id="html-run"><i data-lucide="play"></i> Jalankan</button>
+      </div>
+      <div class="simulasi-layout">
+        <div class="simulasi-editor">
+          <label class="simulasi-preview-label"><i data-lucide="code"></i> Kode HTML</label>
+          <textarea class="code-editor" id="html-editor" spellcheck="false"></textarea>
+        </div>
+        <div class="simulasi-preview-wrap">
+          <label class="simulasi-preview-label"><i data-lucide="eye"></i> Hasil Preview</label>
+          <iframe class="simulasi-preview" id="html-preview" title="Preview HTML"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latihan Interaktif Singkat (5 soal) -->
+    <section class="quiz-section" data-aos="fade-up">
+      <h3><i data-lucide="lightbulb" style="color:var(--color-warning);"></i> Latihan Singkat HTML</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Yuk coba 5 soal singkat! Pilih jawabanmu, langsung muncul feedback-nya.</p>
+      <div id="quiz-html"></div>
+    </section>
+
+    <!-- Navigasi antar materi -->
+    <nav class="materi-nav">
+      <a href="materi.html" class="btn btn-ghost">
+        <i data-lucide="arrow-left"></i>
+        <span>
+          <span class="nav-label">Materi Sebelumnya</span><br>
+          <span class="nav-title">Daftar Materi</span>
+        </span>
+      </a>
+      <a href="materi-css.html" class="btn btn-primary">
+        <span style="text-align:right;">
+          <span class="nav-label">Materi Berikutnya</span><br>
+          <span class="nav-title">CSS</span>
+        </span>
+        <i data-lucide="arrow-right"></i>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/simulasi.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/quiz-materi.js"></script>
+  <script>
+    lucide.createIcons();
+    if (typeof Prism !== 'undefined') Prism.highlightAll();
+    renderMiniQuiz('quiz-html', quizHTML);
+  </script>
+</body>
+</html>

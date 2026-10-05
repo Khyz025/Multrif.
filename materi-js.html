@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materi JavaScript - Multrif.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/prismjs@1.29.0/themes/prism.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-core.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-markup.min.js"></script>
+  <script src="https://unpkg.com/prismjs@1.29.0/components/prism-javascript.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html" class="active"><i data-lucide="book-open"></i> Materi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">›</span>
+      <a href="materi.html">Materi</a>
+      <span class="sep">›</span>
+      <span>JavaScript</span>
+    </div>
+    <div class="progress-indicator"><i data-lucide="book-open"></i> Materi 3 dari 3: JavaScript</div>
+
+    <header style="text-align:center;margin-bottom:2rem;" data-aos="fade-down">
+      <div style="font-size:3rem;margin-bottom:0.5rem;"><i data-lucide="zap" style="color:#ca8a04;"></i></div>
+      <h1 class="page-title">JavaScript</h1>
+      <p class="page-subtitle">Menambahkan interaksi pada halaman web lewat variabel, fungsi, event, dan DOM.</p>
+    </header>
+
+    <nav class="subtopic-nav" data-aos="fade-up">
+      <a href="#sub-1">Pengertian & Fungsi JavaScript</a>
+      <a href="#sub-2">Hubungan HTML, CSS & JavaScript</a>
+      <a href="#sub-3">Variabel</a>
+      <a href="#sub-4">Tipe Data</a>
+      <a href="#sub-5">Operator</a>
+      <a href="#sub-6">Conditional (Percabangan)</a>
+      <a href="#sub-7">Function</a>
+      <a href="#sub-8">Event</a>
+      <a href="#sub-9">DOM</a>
+      <a href="#sub-10">Manipulasi Elemen HTML</a>
+    </nav>
+
+    <section class="subtopic" id="sub-1" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">1</span><h3>Pengertian &amp; Fungsi JavaScript</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">JavaScript adalah bahasa pemrograman yang berjalan di browser dan digunakan untuk membuat halaman web menjadi dinamis dan interaktif, sesuatu yang tidak dapat dilakukan oleh HTML maupun CSS saja.</p>
+      <p class="content-text">Fungsi JavaScript dalam website antara lain merespons aksi pengguna seperti klik dan ketik, mengubah konten halaman tanpa memuat ulang, memvalidasi input form sebelum dikirim, membuat animasi dan interaksi dinamis, serta mengambil dan mengirim data dari dan ke server.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/js/pengertian-javascript.jpg" alt="Perbandingan halaman statis dan halaman yang merespons interaksi dengan JavaScript." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=0&amp;end=205&amp;rel=0" title="Video materi: Pengertian dan Fungsi JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/pengertian-javascript.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">console.log('Halo dari JavaScript!');</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-2" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">2</span><h3>Hubungan HTML, CSS &amp; JavaScript</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">JavaScript biasanya mengambil elemen HTML melalui DOM, lalu dapat membaca atau mengubah kontennya, serta dapat menambah dan menghapus class CSS pada elemen tersebut untuk mengubah tampilannya secara dinamis.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=440&amp;end=700&amp;rel=0" title="Video materi: Hubungan JavaScript dengan HTML" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/hubungan-html-css-javascript.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">const tombol = document.getElementById('tombolTema');
+tombol.addEventListener('click', function () {
+  document.body.classList.toggle('tema-gelap');
+});</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-3" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">3</span><h3>Variabel</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Variabel adalah wadah untuk menyimpan data yang dapat digunakan dan diubah dalam program. JavaScript modern menggunakan kata kunci let untuk nilai yang dapat diubah, dan const untuk nilai tetap yang tidak dapat diubah setelah didefinisikan.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=960&amp;end=1340&amp;rel=0" title="Video materi: Variabel JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/variabel.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">let nama = 'Rifqi';
+const mataKuliah = 'Pemrograman Web';
+nama = 'Adika';</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-4" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">4</span><h3>Tipe Data</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">JavaScript memiliki beberapa tipe data dasar, yaitu String untuk teks dalam tanda kutip, Number untuk angka, Boolean untuk benar atau salah, Array untuk daftar nilai, dan Object untuk kumpulan data berpasangan kunci dan nilai.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/js/tipe-data.jpg" alt="Ilustrasi tipe data String, Number, Boolean, Array, dan Object." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=1340&amp;end=1720&amp;rel=0" title="Video materi: Tipe Data JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/tipe-data.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">let namaMateri = 'HTML';
+let jumlahMateri = 3;
+let sudahLulus = false;
+let daftarMateri = ['HTML', 'CSS', 'JavaScript'];
+let mahasiswa = { nama: 'Rifqi', semester: 5 };</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-5" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">5</span><h3>Operator</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Operator digunakan untuk melakukan operasi pada nilai, seperti operator aritmatika untuk hitungan, operator perbandingan untuk membandingkan nilai, dan operator logika untuk menggabungkan beberapa kondisi.</p>
+      <p class="content-text">Disarankan menggunakan tanda sama dengan tiga kali (strict equality) daripada dua kali, untuk menghindari perbandingan yang membingungkan akibat konversi tipe data otomatis oleh JavaScript.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=2140&amp;end=2450&amp;rel=0" title="Video materi: Operator JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/operator.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">let a = 10;
+let b = 3;
+console.log(a + b);
+console.log(a > b);
+console.log(a === '10');</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-6" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">6</span><h3>Conditional (Percabangan)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Struktur if dan else digunakan agar program dapat mengambil keputusan berbeda tergantung suatu kondisi. Program memeriksa kondisi dari atas ke bawah, dan menjalankan blok pertama yang kondisinya terpenuhi.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/mD6uSGSjgr4?start=1720&amp;end=2140&amp;rel=0" title="Video materi: Conditional JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/percabangan.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">let nilai = 75;
+
+if (nilai >= 85) {
+  console.log('Sangat Baik');
+} else if (nilai >= 70) {
+  console.log('Baik');
+} else {
+  console.log('Perlu Belajar Lagi');
+}</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-7" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">7</span><h3>Function (Pembahasan Mendalam)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Function adalah blok kode yang diberi nama dan dapat dijalankan berulang kali kapan pun dibutuhkan, cukup dengan memanggil namanya. Function dapat menerima input yang disebut parameter, dan dapat mengembalikan hasil memakai kata kunci return.</p>
+      <p class="content-text">Kesalahan umum pemula adalah lupa menuliskan return sehingga fungsi tidak menghasilkan nilai apa pun, atau lupa memanggil fungsi dengan tanda kurung sehingga fungsi tidak benar benar dijalankan.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/js/function.jpg" alt="Diagram fungsi sebagai mesin yang menerima input dan menghasilkan output." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/SDROba_M42g?start=17369&amp;end=18959&amp;rel=0" title="Video materi: Function JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/function.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">function sapa(nama) {
+  return 'Halo, ' + nama + '! Selamat belajar JavaScript.';
+}
+
+console.log(sapa('Rifqi'));
+console.log(sapa('Adika'));</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-8" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">8</span><h3>Event</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Event adalah kejadian yang terjadi pada halaman web, seperti klik tombol, mengetik pada input, atau menggulir halaman. JavaScript dapat mendengarkan event tertentu menggunakan addEventListener dan menjalankan function saat event tersebut terjadi.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/B9Jv9AylyX8?start=65&amp;end=394&amp;rel=0" title="Video materi: Event JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/event.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">const tombol = document.getElementById('tombolKirim');
+
+tombol.addEventListener('click', function () {
+  console.log('Tombol diklik!');
+});</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-9" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">9</span><h3>DOM (Pembahasan Mendalam)</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">DOM (Document Object Model) adalah representasi struktur HTML dalam bentuk objek yang dapat diakses dan diubah oleh JavaScript. Setiap tag HTML pada halaman menjadi sebuah node yang dapat dicari, dibaca, dan diubah melalui kode JavaScript.</p>
+      <p class="content-text">Elemen dapat dipilih memakai document.getElementById atau document.querySelector, isinya dapat dibaca dan diubah lewat textContent, gayanya dapat diubah lewat style, dan class-nya dapat ditambah, dihapus, atau dialihkan lewat classList.</p>
+      <p class="subtopic-label">Gambar / Ilustrasi</p>
+      <img class="lesson-image" src="assets/images/js/dom.jpg" alt="Diagram pohon DOM dari elemen html ke head, body, dan elemen turunannya." loading="lazy">
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/B9Jv9AylyX8?start=394&amp;end=698&amp;rel=0" title="Video materi: DOM dan Event Listener JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/dom.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">const judul = document.getElementById('judul');
+judul.textContent = 'Judul Baru!';
+judul.style.color = 'crimson';
+judul.classList.toggle('tersorot');</code></pre>
+    </section>
+
+    <section class="subtopic" id="sub-10" data-aos="fade-up">
+      <div class="subtopic-header"><span class="subtopic-num">10</span><h3>Manipulasi Elemen HTML</h3></div>
+      <p class="subtopic-label">Teks Penjelasan</p>
+      <p class="content-text">Menggabungkan konsep DOM dan event membuat halaman benar benar interaktif, misalnya menampilkan pesan yang semula tersembunyi setelah sebuah tombol diklik, dengan mengubah property style.display pada elemen terkait.</p>
+      <p class="subtopic-label">Video</p>
+      <div class="youtube-player"><iframe src="https://www.youtube.com/embed/KyvwjYobGIM?start=39&amp;end=729&amp;rel=0" title="Video materi: Manipulasi Elemen HTML dengan JavaScript" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+      <button class="collapsible-toggle"><i data-lucide="volume-2"></i> Audio</button>
+      <div class="collapsible-content"><audio class="lesson-audio" controls preload="none"><source src="assets/audio/js/manipulasi-elemen-html.m4a" type="audio/mp4">Browser kamu belum mendukung pemutar audio.</audio></div>
+
+      <p class="subtopic-label">Contoh Kode</p>
+      <pre class="language-javascript"><code class="language-javascript">const tombolSimpan = document.getElementById('btnSimpan');
+const pesan = document.getElementById('pesan');
+
+tombolSimpan.addEventListener('click', function () {
+  pesan.style.display = 'block';
+});</code></pre>
+    </section>
+
+    <!-- Simulasi JavaScript (tombol demo + output) -->
+    <section class="simulasi-section" data-aos="zoom-in">
+      <h3><i data-lucide="play-circle" style="color:var(--color-accent);"></i> Coba Kodenya! — Demo JavaScript</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Tekan tombol-tombol di bawah untuk melihat cara JavaScript mengubah elemen di halaman ini secara langsung.</p>
+      <div class="simulasi-actions">
+        <button class="btn btn-primary btn-sm" id="js-btn-text"><i data-lucide="type"></i> Ubah Teks</button>
+        <button class="btn btn-accent btn-sm" id="js-btn-color"><i data-lucide="palette"></i> Ubah Warna</button>
+        <button class="btn btn-outline btn-sm" id="js-btn-alert"><i data-lucide="message-square"></i> Tampilkan Pesan</button>
+        <button class="btn btn-ghost btn-sm" id="js-btn-reset"><i data-lucide="rotate-ccw"></i> Reset</button>
+      </div>
+      <div class="simulasi-layout" style="grid-template-columns:1fr;">
+        <div class="js-demo-area">
+          <div id="demo-box">
+            <span id="demo-text">Teks awal</span>
+          </div>
+          <div id="js-output" style="margin-top:1rem;font-family:var(--font-mono);font-size:0.85rem;color:var(--color-primary);display:none;background:var(--color-bg);padding:0.75rem 1rem;border-radius:var(--radius-sm);width:100%;text-align:left;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latihan Interaktif Singkat -->
+    <section class="quiz-section" data-aos="fade-up">
+      <h3><i data-lucide="lightbulb" style="color:var(--color-warning);"></i> Latihan Singkat JavaScript</h3>
+      <p style="margin-bottom:1rem;color:var(--color-text-muted);font-size:0.9rem;">Yuk coba 5 soal singkat! Pilih jawabanmu, langsung muncul feedback-nya.</p>
+      <div id="quiz-js"></div>
+    </section>
+
+    <!-- Navigasi antar materi -->
+    <nav class="materi-nav">
+      <a href="materi-css.html" class="btn btn-ghost">
+        <i data-lucide="arrow-left"></i>
+        <span>
+          <span class="nav-label">Materi Sebelumnya</span><br>
+          <span class="nav-title">CSS</span>
+        </span>
+      </a>
+      <a href="evaluasi.html" class="btn btn-primary">
+        <span style="text-align:right;">
+          <span class="nav-label">Lanjut ke</span><br>
+          <span class="nav-title">Evaluasi</span>
+        </span>
+        <i data-lucide="arrow-right"></i>
+      </a>
+    </nav>
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/simulasi.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/quiz-materi.js"></script>
+  <script>
+    lucide.createIcons();
+    if (typeof Prism !== 'undefined') Prism.highlightAll();
+    renderMiniQuiz('quiz-js', quizJS);
+  </script>
+</body>
+</html>

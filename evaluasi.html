@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluasi - Multrif.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span>Multrif.</span>
+      </a>
+      <button class="navbar-toggle" aria-label="Buka menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html"><i data-lucide="home"></i> Beranda</a></li>
+        <li><a href="pengenalan.html"><i data-lucide="info"></i> Pengenalan</a></li>
+        <li><a href="materi.html"><i data-lucide="book-open"></i> Materi</a></li>
+        <li><a href="evaluasi.html" class="active"><i data-lucide="clipboard-check"></i> Evaluasi</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Beranda</a>
+      <span class="sep">›</span>
+      <span>Evaluasi</span>
+    </div>
+
+    <h1 class="page-title" data-aos="fade-up">Evaluasi Akhir</h1>
+    <p class="page-subtitle" data-aos="fade-up">Evaluasi ini terdiri dari 15 soal pilihan ganda yang mencakup materi HTML, CSS, dan JavaScript. Pilih satu jawaban untuk tiap soal, lalu lihat nilai dan rekomendasi materi yang perlu diulang di bagian akhir.</p>
+
+    <div class="card" data-aos="fade-up">
+      <div id="eval-container"></div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p><span class="footer-brand">Multrif.</span> - Multimedia Pembelajaran Interaktif</p>
+    <p>Muh. Rifqi Adika Ram · Mata Kuliah Multimedia Pembelajaran</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/evaluasi.js"></script>
+  <script>
+    lucide.createIcons();
+    renderEval('eval-container', evalQuestions, evalTopics);
+  </script>
+</body>
+</html>
