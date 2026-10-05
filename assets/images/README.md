@@ -1,23 +1,5 @@
-# Folder Gambar / Ilustrasi
+Multrif adalah website multimedia pembelajaran interaktif yang dirancang untuk membantu mahasiswa memahami dasar dasar pemrograman web, yaitu HTML, CSS, dan JavaScript, secara bertahap dan mudah dipahami. Website ini dibangun murni dengan HTML, CSS, dan JavaScript tanpa kerangka kerja tambahan, dan ditujukan khususnya bagi mahasiswa mata kuliah Pemrograman Web yang baru mengenal ketiga bahasa tersebut.
 
-Taruh semua gambar, ilustrasi, dan aset visual untuk website Multrif di folder ini.
+Berbeda dari materi pembelajaran yang hanya berupa teks statis, Multrif menggabungkan penjelasan konsep dengan berbagai unsur multimedia seperti gambar ilustrasi, animasi, video, dan audio narasi pada bagian yang memang memerlukan penjelasan lisan. Setiap materi juga dilengkapi simulasi kode langsung, sehingga pengguna dapat mencoba, mengubah, dan melihat hasil kodenya secara instan tanpa perlu alat atau instalasi tambahan.
 
-Contoh penamaan yang disarankan:
-- `hero-illustration.png`
-- `html-structure.png`
-- `css-box-model.png`
-- `js-dom.png`
-
-Setelah menaruh gambar di sini, ganti elemen placeholder di halaman HTML, misalnya:
-
-```html
-<div class="placeholder-media placeholder-image">
-  <span>[GAMBAR/ILUSTRASI — ganti dengan &lt;img&gt; di sini]</span>
-</div>
-```
-
-menjadi:
-
-```html
-<img src="assets/images/nama-gambar.png" alt="Deskripsi gambar" />
-```
+Alur belajarnya dirancang runtut, mulai dari halaman Beranda, Pengenalan (berisi tujuan dan cara penggunaan), Daftar Materi (pilihan HTML, CSS, atau JavaScript), hingga setiap halaman materi yang berisi sepuluh sampai dua belas subtopik lengkap dengan latihan singkat ber umpan balik langsung. Setelah menyelesaikan ketiga materi, pengguna dapat mengerjakan Evaluasi Akhir berisi lima belas soal yang menampilkan nilai, kategori capaian, umpan balik, dan rekomendasi materi yang perlu diulang.
